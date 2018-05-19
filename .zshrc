@@ -10,7 +10,14 @@ export ZSH=/home/ross/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv os_icon)
+POWERLEVEL9K_DIR_HOME_FOREGROUND=yellow
+POWERLEVEL9K_DIR_HOME_BACKGROUND=black
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND=yellow
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND=black
+POWERLEVEL9K_VIRTUALENV_FOREGROUND=black
+POWERLEVEL9K_VIRTUALENV_BACKGROUND=yellow
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of

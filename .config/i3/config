@@ -176,13 +176,14 @@ bindsym Mod4+l exec i3lock-fancy -- scrot -z
 # TODO screenshot (-s = selection) bindsym exec scrot -s
 
 # Assign applications to workspaces
-assign [class="termite"] $ws1
-assign [class="google-chrome-stable"] $ws2
+assign [class="Slack"] $ws5
+assign [class="Google-chrome"] $ws2
 
+# Remove titlebar
 new_window 1pixel
 
 # Start-up applications
-exec_always --no-startup-id feh --bg-scale $HOME/pictures/bg.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/pictures/space.png
 exec --no-startup-id udiskie --no-notify
 exec --no-startup-id compton -b
 
