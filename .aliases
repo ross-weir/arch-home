@@ -1,4 +1,5 @@
 mkcd() { mkdir $1;cd $1; }
+findfont() { echo "$(fc-list : family | grep $1 | tail -1)"; }
 
 alias dc="docker-compose"
 alias ..="cd .."
@@ -6,6 +7,7 @@ alias cl="clear"
 alias cx="chmod +x"
 alias ex="exit"
 alias mkcd=mkcd
+alias findfont=findfont
 alias nv="nvim"
 alias pes="pipenv shell"
 alias ls="ls -lAi --group-directories-first --color='always'"
