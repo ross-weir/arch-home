@@ -2,6 +2,8 @@ mkcd() { mkdir $1;cd $1; }
 findfont() { echo "$(fc-list : family | grep $1 | tail -1)"; }
 
 alias dc="docker-compose"
+alias pkgdump="pacman -Qqe > $HOME/pkglist.txt"
+alias pkgdumpinstall="pacman -S - < $HOME/pkglist.txt"
 alias ..="cd .."
 alias cl="clear"
 alias cx="chmod +x"
